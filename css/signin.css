@@ -1,13 +1,15 @@
 body {
 	padding-top: 40px;
 	padding-bottom: 40px;
-	background-color: #eee;
+	background-color: #ffffff;
+	background-image: url("imgs/three.jpg");
 }
 
 .form-signin {
 	max-width: 330px;
 	padding: 15px;
 	margin: 0 auto;
+	background-color: #eee;
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
@@ -37,4 +39,12 @@ body {
 	margin-bottom: 10px;
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;	
+}
+.glyphicon {
+	text-align: center;
+}
+
+.logo-circle {
+	height: 50px;
+	width: 80px;
 }
