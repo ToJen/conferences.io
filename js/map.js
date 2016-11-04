@@ -21,13 +21,18 @@ function initMap() {
 	var infoText = '<div class="info-window">' +
 										'<h3>Info Window Content</h3>' +
 										'<div class="info-content">' +
-											'<p>Pellentesque habitant morbi tristique senectus et netus et malesuada.</p>' +
+											'<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>' +
 										'</div>' +
 									'</div>';
 
 	var infoWindow = new google.maps.InfoWindow({
 		content: infoText,
-		maxWidth: 400
+		maxWidth: 4000,
+		maxHeight: 1000
+	});
+
+	marker.addListener('click', function() {
+		infoWindow.open(map, marker);
 	});
 
 }
