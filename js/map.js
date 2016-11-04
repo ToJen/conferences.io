@@ -9,4 +9,11 @@ function initMap() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	}
 	var map = new google.maps.Map(mapCanvas, mapOptions);
+
+	var markerImage = "imgs/marker.png";
+	var marker = new google.maps.Marker({
+		position: location,
+		map: map,
+		icon: markerImage
+	});
 }
