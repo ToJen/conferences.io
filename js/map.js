@@ -27,8 +27,7 @@ function initMap() {
 
 	var infoWindow = new google.maps.InfoWindow({
 		content: infoText,
-		maxWidth: 4000,
-		maxHeight: 1000
+		maxWidth: 400
 	});
 
 	marker.addListener('click', function() {
