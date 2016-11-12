@@ -10,7 +10,40 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top"> <!-- or navbar-inverse -->
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <span class="pull-left navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-left: 10px"><i class="glyphicon glyphicon-menu-hamburger"></i></span>
+                <a class="navbar-brand" href="#">MUN Conferences App</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 4
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 4-1</a></li>
+                            <li><a href="#">Page 4-2</a></li>
+                            <li><a href="#">Page 4-3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right" id="userAccess">
+                    <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
+      <br><br>
       <div class="row">
         <div class="col-lg-8 col-offest-2">
           <h2>lorem ipsum</h2>
