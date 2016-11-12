@@ -1,4 +1,3 @@
-
 /* Toggle Styles */
 
 #wrapper {
@@ -44,6 +43,10 @@
 
 /* Sidebar Styles */
 
+#sidebar-wrapper {
+    background: #00B398;
+}
+
 .sidebar-nav {
     position: absolute;
     top: 0;
@@ -60,12 +63,13 @@
 
 .sidebar-nav li a {
     display: block;
-    color: #999999;
+    color: #fff;
     text-decoration: none;
 }
 
 .sidebar-nav li a:hover {
     background: rgba(255, 255, 255, 0.2);
+    /*background: #00B398;*/
     color: #fff;
     text-decoration: none;
 }
@@ -82,7 +86,7 @@
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: #999999;
+    color: #fff;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -114,5 +118,6 @@
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;
+        /*margin-left: 250px;*/
     }
 }
