@@ -1,11 +1,11 @@
 function initMap() {
 
-	var location = new google.maps.LatLng(47.5716807,-52.7354585);
+	var location = new google.maps.LatLng(47.573382,-52.730641);
 
 	var mapCanvas = document.getElementById('map');
 	var mapOptions = {
 		center: location,
-		zoom: 15,
+		zoom: 17,
 		panControl: false,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	}
