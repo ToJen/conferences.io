@@ -1,2 +1,2 @@
 # conferences.io
-Responsive Conference Web App
+Responsive Web App for conferences
