@@ -38,21 +38,18 @@ function initMap() {
 
 	if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
-      var pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-      };
-      console.log(pos);
-			var userMarker = new google.maps.Marker({
-				position: pos,
-				map: map,
-				icon: currLocImg
-			});
-
-      // infoWindow.setPosition(pos);
-      // infoWindow.setContent('Location found.');
-      map.setCenter(pos);
-    }, function() {
+	      var pos = {
+	        lat: position.coords.latitude,
+	        lng: position.coords.longitude
+	      };
+	      // console.log(pos);	// debug
+				var userMarker = new google.maps.Marker({
+					position: pos,
+					map: map,
+					icon: currLocImg
+				});
+	      map.setCenter(pos);
+    	}, function() {
       handleLocationError(true, infoWindow, map.getCenter());
     });
   } 
@@ -66,8 +63,5 @@ function initMap() {
       'Error: The Geolocation service failed.' :
       'Error: Your browser doesn\'t support geolocation.');
   }
-
-	// var userMarker = "imgs/bluecircle.png";
-	// var userLocation = 
 
 }
