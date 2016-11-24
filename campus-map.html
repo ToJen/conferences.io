@@ -33,7 +33,7 @@
                       </a>
                       <ul class="dropdown-menu">
                         <li class="active"><a href="campus-map.html">Campus</a></li>
-                        <li><a href="#">St. John's</a></li>
+                        <li><a href="#">City</a></li>
                       </ul>
                     </li>
                     <li class="dropdown">
@@ -63,7 +63,7 @@
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </div>
       </div>
-      <!-- <div id="map" style="width:100%;height:500px"></div> <!-- Google Maps, map focused on campus--> -->
+      <!-- div id="map" style="width:100%;height:500px"></div --> <!-- Google Maps, map focused on campus-->
       <hr>
     </div>
 
@@ -71,86 +71,72 @@
 
       <h2>Places on the St. John's Campus</h2>
       <p>Here's some quick info about places on the St. John's campus.</p><br>
-      
-      <div class="media">
-        <div class="pull-left">
-          <img src="imgs/qe2-library.jpg">
-        </div>    <!-- .pull-left -->
-        <div class="media-body">
-          <h3 class="media-heading">Queen Elizabth II Library</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="http://www.library.mun.ca/qeii/hours/" target="blank">Library hours</a>
-        </div>    <!-- .media-body -->
-      </div>      <!-- .media -->
-
       <hr>
 
-      <div class="media">
-        <div class="media-body">
-          <h3 class="media-heading">University Center</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>    <!-- .media-body -->
-        <div class="pull-right">
-          <img src="imgs/uc.jpg">
-        </div>    <!-- .pull-right -->
-      </div>      <!-- .media -->
-
-      <hr>
-
-      <div class="media">
-        <div class="pull-left">
-          <img src="imgs/health-science.jpg">
-        </div>    <!-- .pull-left -->
-        <div class="media-body">
-          <h3 class="media-heading">Health Science</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>    <!-- .media-body -->
-      </div>      <!-- .media -->
-
-      <hr>
-
-      <div class="media">
-        <div class="media-body">
-          <h3 class="media-heading">Bruneau Centre for Innovation and Research</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>    <!-- .media-body -->
-        <div class="pull-right">
-          <img src="imgs/inco.jpg">
-        </div>    <!-- .pull-right -->
-      </div>      <!-- .media -->
-
-      <hr>
-
-      <div class="media">
-        <div class="pull-left">
-          <img src="imgs/field-house.jpg">
-        </div>    <!-- .pull-left -->
-        <div class="media-body">
-          <h3 class="media-heading">Field House</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="http://www.theworksonline.ca" target="blank">The Works hours</a>
-        </div>    <!-- .media-body -->
-      </div>      <!-- .media -->
-
-      <hr>
+      <!-- Images to be displayed-->
+      <div class="row">
+        <!-- <div class="col-lg-2 col-sm" -->
+        <div class="col-lg-4 col-sm-4 col-xs-6">
+          <a title="Bruneau Centre" href="#" data-toggle="modal" data-title="Bruneau Centre for Innovation and Research" data-caption="" data-target="#imgModal" data-image-id="">
+            <img class="thumbnail img-responsive" src="imgs/inco.jpg">
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-6">
+          <a title="QE II Library" href="#" data-toggle="modal" data-title="Queen Elizabeth II Library" data-caption="" data-target="#imgModal" data-image-id="">
+            <img class="thumbnail img-responsive" src="imgs/qe2-library.jpg">
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-6">
+          <a title="The Works" href="#" data-toggle="modal" data-title="The Works Field House" data-caption="" data-target="#imgModal" data-image-id="">
+            <img class="thumbnail img-responsive" src="imgs/field-house.jpg">
+          </a>
+        </div>
+      </div>  <!-- .row -->
 
       <div class="row">
-        <div class="col-xs-6 col-sm-4">
-          <img src="imgs/inco.jpg">
-          <h3>Inco</h3>
+        <div class="col-lg-4 col-sm-4 col-xs-6">
+          <a title="University Center" href="#" data-toggle="modal" data-title="University Center" data-caption="" data-target="#imgModal" data-image-id="">
+            <img class="thumbnail img-responsive" src="imgs/uc.jpg">
+          </a>
         </div>
-        <hr width="1" size="500">
-        <div class="col-xs-6 col-sm-4">
-          <img src="imgs/uc.jpg">
-          <h3>UC</h3>
+        <div class="col-lg-4 col-sm-4 col-xs-6">
+          <a title="Health Science" href="#" data-toggle="modal" data-title="Health Science" data-caption="" data-target="#imgModal" data-image-id="">
+            <img class="thumbnail img-responsive" src="imgs/health-science.jpg">
+          </a>
         </div>
-        <hr width="1" size="500">
-        <div class="col-xs-6 col-sm-4">
-          <img src="imgs/field-house.jpg">
-          <h3>The Works</h3>
-        </div>
-        <hr width="1" size="500">
-      </div>      <!-- .row -->
+      </div>  <!-- .row -->
+
+
+      <!-- Modal for Image Gallery -->
+      <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header"> 
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times</span>
+              </button>
+              <h4 class="modal-title" id="imbLbl">Buildings at MUN: Title of Image</h4> 
+            </div> <!-- .modal-header -->
+
+            <div class="modal-body">
+
+            </div> <!-- .modal-body   -->
+
+            <div class="modal-footer">
+              <div class="col-md-2">
+                <button type="button" class="btn btn-primary" id="previous">Previous</button>
+              </div>
+              <div class="col-md-8 text-justify" id="imgCaption">
+              </div>
+              <div class="col-md-2">
+                <button type="button" class="btn btn-primary" id="next">Next</button>
+              </div>
+            </div> <!-- .modal-footer -->
+
+          </div>  <!-- .modal-content -->
+        </div>    <!-- .modal-dialog  --> 
+      </div>      <!-- .modal-fade    -->
 
       <br>
       <hr>
@@ -161,6 +147,7 @@
       </footer>
     </div>
 
+    <script src="js/gallery.js"></script>
     <script src="js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtSvVwwRSC4oDn1lnVLxYjMFVnxFtn8Q0&callback=initMap"
     async defer></script>
