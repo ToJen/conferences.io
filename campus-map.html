@@ -14,10 +14,11 @@
       width:1px;
       height:10px;
     }*/
-    /*img {
-      width:  auto;
-      height: auto;
-    }*/
+    img {
+      /*position: relative;*/
+      /*width:  auto;
+      height: auto;*/
+    }
   </style>
   <body>
 
@@ -82,17 +83,17 @@
         <!-- <div class="col-lg-2 col-sm" -->
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
           <a class="thumbnail" title="Bruneau Centre" href="#" data-toggle="modal" data-title="Bruneau Centre for Innovation and Research" data-caption="" data-target="#imgModal" data-image="imgs/inco.jpg" data-image-id="">
-            <img class="img-responsive" src="imgs/inco.jpg">
+            <img class="center-block img-responsive" src="imgs/inco.jpg">
           </a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
           <a class="thumbnail" title="QE II Library" href="#" data-toggle="modal" data-title="Queen Elizabeth II Library" data-caption="" data-target="#imgModal" data-image="imgs/qe2-library.jpg" data-image-id="">
-            <img class="img-responsive" src="imgs/qe2-library.jpg">
+            <img class="center-block img-responsive" src="imgs/qe2-library.jpg">
           </a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
           <a class="thumbnail" title="The Works" href="#" data-toggle="modal" data-title="The Works Field House" data-caption="" data-target="#imgModal" data-image="imgs/field-house.jpg" data-image-id="">
-            <img class="img-responsive" src="imgs/field-house.jpg">
+            <img class="center-block img-responsive" src="imgs/field-house.jpg">
           </a>
         </div>
       <!--/div-->  <!-- .row -->
@@ -100,17 +101,17 @@
       <!--div class="row"-->
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
           <a class="thumbnail" title="University Center" href="#" data-toggle="modal" data-title="University Center" data-caption="" data-image="imgs/uc.jpg" data-target="#imgModal" data-image-id="">
-            <img class="img-responsive" src="imgs/uc.jpg">
+            <img class="center-block img-responsive" src="imgs/uc.jpg">
           </a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
           <a class="thumbnail" title="Health Science" href="#" data-toggle="modal" data-title="Health Science" data-caption="" data-target="#imgModal" data-image="imgs/health-science.jpg" data-image-id="">
-            <img class="img-responsive" src="imgs/health-science.jpg">
+            <img class="center-block img-responsive" src="imgs/health-science.jpg">
           </a>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
           <a class="thumbnail" title="Hatcher House" href="#" data-toggle="modal" data-title="Hatcher House" data-caption="" data-target="#imgModal" data-image="imgs/hatcher.jpg" data-image-id="">
-            <img class="img-responsive" src="imgs/hatcher.jpg">
+            <img class="center-block img-responsive" src="imgs/hatcher.jpg">
           </a>
         </div>
       </div>  <!-- .row -->
@@ -133,12 +134,11 @@
             </div> <!-- .modal-body   -->
 
             <div class="modal-footer">
-              <div class="col-md-2">
+              <div class="col-md-2 col-sm-2 col-xs-3">
                 <button type="button" class="btn btn-primary" id="previous">Previous</button>
               </div>
-              <div class="col-md-8 text-justify" id="imgCaption">
-              </div>
-              <div class="col-md-2">
+              <div class="col-md-8 col-sm-8 col-xs-6 text-justify" id="imgCaption"></div>
+              <div class="col-md-2 col-sm-2 col-xs-3">
                 <button type="button" class="btn btn-primary" id="next">Next</button>
               </div>
             </div> <!-- .modal-footer -->
