@@ -14,6 +14,10 @@
       width:1px;
       height:10px;
     }*/
+    /*img {
+      width:  auto;
+      height: auto;
+    }*/
   </style>
   <body>
 
@@ -76,32 +80,37 @@
       <!-- Images to be displayed-->
       <div class="row">
         <!-- <div class="col-lg-2 col-sm" -->
-        <div class="col-lg-4 col-sm-4 col-xs-6">
-          <a title="Bruneau Centre" href="#" data-toggle="modal" data-title="Bruneau Centre for Innovation and Research" data-caption="" data-target="#imgModal" data-image-id="">
-            <img class="thumbnail img-responsive" src="imgs/inco.jpg">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+          <a class="thumbnail" title="Bruneau Centre" href="#" data-toggle="modal" data-title="Bruneau Centre for Innovation and Research" data-caption="" data-target="#imgModal" data-image="imgs/inco.jpg" data-image-id="">
+            <img class="img-responsive" src="imgs/inco.jpg">
           </a>
         </div>
-        <div class="col-lg-4 col-sm-4 col-xs-6">
-          <a title="QE II Library" href="#" data-toggle="modal" data-title="Queen Elizabeth II Library" data-caption="" data-target="#imgModal" data-image-id="">
-            <img class="thumbnail img-responsive" src="imgs/qe2-library.jpg">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+          <a class="thumbnail" title="QE II Library" href="#" data-toggle="modal" data-title="Queen Elizabeth II Library" data-caption="" data-target="#imgModal" data-image="imgs/qe2-library.jpg" data-image-id="">
+            <img class="img-responsive" src="imgs/qe2-library.jpg">
           </a>
         </div>
-        <div class="col-lg-4 col-sm-4 col-xs-6">
-          <a title="The Works" href="#" data-toggle="modal" data-title="The Works Field House" data-caption="" data-target="#imgModal" data-image-id="">
-            <img class="thumbnail img-responsive" src="imgs/field-house.jpg">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+          <a class="thumbnail" title="The Works" href="#" data-toggle="modal" data-title="The Works Field House" data-caption="" data-target="#imgModal" data-image="imgs/field-house.jpg" data-image-id="">
+            <img class="img-responsive" src="imgs/field-house.jpg">
           </a>
         </div>
-      </div>  <!-- .row -->
+      <!--/div-->  <!-- .row -->
 
-      <div class="row">
-        <div class="col-lg-4 col-sm-4 col-xs-6">
-          <a title="University Center" href="#" data-toggle="modal" data-title="University Center" data-caption="" data-target="#imgModal" data-image-id="">
-            <img class="thumbnail img-responsive" src="imgs/uc.jpg">
+      <!--div class="row"-->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+          <a class="thumbnail" title="University Center" href="#" data-toggle="modal" data-title="University Center" data-caption="" data-image="imgs/uc.jpg" data-target="#imgModal" data-image-id="">
+            <img class="img-responsive" src="imgs/uc.jpg">
           </a>
         </div>
-        <div class="col-lg-4 col-sm-4 col-xs-6">
-          <a title="Health Science" href="#" data-toggle="modal" data-title="Health Science" data-caption="" data-target="#imgModal" data-image-id="">
-            <img class="thumbnail img-responsive" src="imgs/health-science.jpg">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+          <a class="thumbnail" title="Health Science" href="#" data-toggle="modal" data-title="Health Science" data-caption="" data-target="#imgModal" data-image="imgs/health-science.jpg" data-image-id="">
+            <img class="img-responsive" src="imgs/health-science.jpg">
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+          <a class="thumbnail" title="Hatcher House" href="#" data-toggle="modal" data-title="Hatcher House" data-caption="" data-target="#imgModal" data-image="imgs/hatcher.jpg" data-image-id="">
+            <img class="img-responsive" src="imgs/hatcher.jpg">
           </a>
         </div>
       </div>  <!-- .row -->
@@ -116,11 +125,11 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times</span>
               </button>
-              <h4 class="modal-title" id="imbLbl">Buildings at MUN: Title of Image</h4> 
+              <h4 class="modal-title" id="imbLabel"></h4> 
             </div> <!-- .modal-header -->
 
             <div class="modal-body">
-
+              <img id="imgDisplay" src="">
             </div> <!-- .modal-body   -->
 
             <div class="modal-footer">
