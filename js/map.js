@@ -1,6 +1,6 @@
 function initMap() {
 
-	var location = new google.maps.LatLng(47.573382,-52.730641);
+	var location = new google.maps.LatLng(47.5716807, -52.7332698);
 
 	var mapCanvas = document.getElementById('map');
 	var mapOptions = {
@@ -19,9 +19,10 @@ function initMap() {
 	});
 
 	var infoText = '<div class="info-window">' +
-										'<h3>Info Window Content</h3>' +
+										'<h3>Bruneau Centre for Innovation and Research</h3>' +
 										'<div class="info-content">' +
-											'<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>' +
+											// '<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>' +
+											'<p>This is where conferences will be held</p>' +
 										'</div>' +
 									'</div>';
 
@@ -42,7 +43,6 @@ function initMap() {
 	        lat: position.coords.latitude,
 	        lng: position.coords.longitude
 	      };
-	      // console.log(pos);	// debug
 				var userMarker = new google.maps.Marker({
 					position: pos,
 					map: map,
