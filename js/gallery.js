@@ -30,10 +30,19 @@ $(document).ready(function() {
 			var $sel = selector;
 			curr_img =  $sel.data('image-id');
 			$('#imgLabel').text($sel.data('title'));
+			// console.log($sel.data('title'));	// debug
+			// $('#imgCaption').text(getCaption($sel));	// retreive each caption dynamically
 			$('#imgCaption').text($sel.data('caption'));
 			$('#imgDisplay').attr('src', $sel.data('image'));
 			disableButton(counter, $sel.data('image-id'));
 		}
+
+		// retrun individual image captions
+		/*function getCaption(selector) {
+			var $sel = selector;
+			if($sel.data.('title') == "Bruneau Centre for Innovation and Research")
+				return getElementById('inco').innerHTML;
+		}*/
 
 		if(setIDs == true) {
 			$('[data-image-id]').each(function() {
