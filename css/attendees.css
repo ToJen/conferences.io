@@ -12,15 +12,15 @@
     min-height: 110px;
     margin-right: 22px;
     text-align: center!important;
-    background-color: #676767;
+    background-color: #00B398;
     padding: 20px 0;
 }
 
 .info-block.block-info {
-    border-color: #20819e;
+    border-color: #00B398;
 }
 
 .info-block.block-info .square-box {
-    background-color: #20819e;
+    background-color: #00B398;
     color: #FFF;
 }
