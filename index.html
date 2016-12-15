@@ -11,6 +11,24 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Latest compiled JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			.backToTop {
+				cursor: pointer;
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				display: none;
+        background-color: #00B398;
+        border-color: #069b85;
+        opacity: 0.7;
+			}
+			.backToTop:hover, .backToTop:focus, .backToTop:active , .backToTop:active:focus{
+				color: #00B398;
+        background-color: #fff;
+        border-color: #069b85;
+        opacity: 1.0;
+			}
+		</style>
 	</head> 
 
 	<body>
@@ -59,6 +77,7 @@
 		<!-- Begin page content -->
 
 		<!-- Main Carousel -->
+		<p id="top"></p>
 		<div id="mainCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
@@ -179,13 +198,8 @@
 				</div>
 			</div>
 
-			<!-- <hr class="featurette-divider"> -->
- 
-			<!-- FOOTER -->
-			<!--footer class="footer">
-				<p class="pull-right"><a href="#">Back to top</a></p>
-				<p>&copy; 2016 MUN Conferences. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-			</footer-->
+			<p class="pull-right"><a href="#" id="backToTop" class="btn btn-primary btn-lg backToTop" role="button">
+				<span class="glyphicon glyphicon-chevron-up"></span></a></p>
 		
 		</div>	<!-- .container -->    
 
@@ -223,27 +237,23 @@
 				</div>
 			</div>
 			<br>
-			<p class="pull-right"><a href="#">Back to top</a></p>
+			<!-- <p class="pull-right"><a href="#top">Back to top</a></p> -->
 			<p>&copy; 2016 MUN Conferences &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 		</div>
 
-		<!-- <div class="container-fluid panel-group">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="panel panel-default">
-						<div class="panel-heading">SOCIAL</div>
-						<div class="panel-body">
-							<ul style="list-style-type:none;">
-								<li><a href="#">Facebook</a></li>
-								<li><a href="#">Twitter</a></li>
-								<li><a href="#">Instagram</a></li>
-								<li><a href="#">Snapchat</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
+		<script>
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 50) 
+					$("#backToTop").fadeIn();
+				else
+					$("#backToTop").fadeOut();
+			});
+
+			$("#backToTop").click(function() {
+			  $("html, body").animate({scrollTop: 10}, 800);
+			  return false;
+			});
+		</script>	
 
 	</body>
 </html>
