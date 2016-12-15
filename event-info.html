@@ -14,6 +14,11 @@
       .table-striped > tbody > tr:nth-child(odd) > th {
         background-color: #00B398;
       }
+
+      .image-responsive {
+        width: 100px !important;
+        height: 100px !important;
+      }
     </style>
   </head>
   <body>
@@ -78,8 +83,9 @@
 
       <div class="row">
         <div class="col-lg-3"><h2>Weather Forecast</h2></div>
-        <div class="col-md-6" id="temp"><p>-5&degC | Cloudy | Light Snow</p></div>
-        <div class="col-lg-6 col-md-6" id="wind"><p>Wind: 40 KM/H | Precipitaion: 3% | Humidity: 72%</p></div>
+        <div class="col-lg-3 col-md-4" id="temp"><p>-5&degC (23&degF) | Cloudy | Light Snow</p></div>
+        <div class="col-lg-3 col-md-4" id="wind"><p>Wind: 40 KM/H | Precipitaion: 3% | Humidity: 72%</p></div>
+        <div class="col-lg-3 col-md-4" id="weather-icon"><img src="imgs/weather-icon-cloudy.png" class="image-responsive"></div>
       </div>
 
       <hr>
