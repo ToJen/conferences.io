@@ -23,43 +23,7 @@
   </head>
   <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <span class="pull-left navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-left: 10px"><i class="glyphicon glyphicon-menu-hamburger"></i></span>
-                <a class="navbar-brand" href="index.html">MUN Conferences App</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Explore
-                        <span class="caret"></span>
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a href="campus-map.html">Campus</a></li>
-                        <li><a href="#">City</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown active">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Event Details
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="active"><a href="#">About</a></li>
-                            <li><a href="attendees.html">Guests</a></li>
-                            <li><a href="sponsors.html">Sponsors</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right" id="userAccess">
-                    <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php include('header.php'); ?>
 
     <div class="container">
 

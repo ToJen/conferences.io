@@ -12,45 +12,7 @@
   </head>
   <body>
 
-    <!--?php include 'header.php';?-->
-
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <span class="pull-left navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-left: 10px"><i class="glyphicon glyphicon-menu-hamburger"></i></span>
-                <a class="navbar-brand" href="index.html">MUN Conferences App</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Explore
-                        <span class="caret"></span>
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a href="campus-map.html">Campus</a></li>
-                        <li><a href="#">City</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown active">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Event Details
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="event-info.html">About</a></li>
-                            <li class="active"><a href="attendees.html">Guests</a></li>
-                            <li><a href="sponsors.html">Sponsors</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right" id="userAccess">
-                    <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php include('header.php'); ?>
 
 
     <div class="container">
@@ -60,7 +22,7 @@
       <div class="searchable-container">
         <input type="search" class="form-control" id="input-search" placeholder="Search...">
         <br>
-        <h3>Organizers & Speakers</h3> 
+        <h3>Organizers &amp Speakers</h3> 
         <div class="row">
           <div class="items col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix">
              <div class="info-block block-info clearfix">
