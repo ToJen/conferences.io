@@ -6,6 +6,7 @@
 		if($curr == $requestURI) {
 			echo 'class="active"';
 
+			// try to get this working
 			/*$parent = $elem->parentNode;
 			while($parent->tagName != "li") {
 				$parent = $parent->parentNode;
@@ -29,7 +30,7 @@
 		<div class="container-fluid">
 				<div class="navbar-header">
 						<span class="pull-left navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="margin-left: 10px"><i class="glyphicon glyphicon-menu-hamburger"></i></span>
-						<a class="navbar-brand" href="#">MUN Conferences App</a>
+						<a class="navbar-brand" href="index.php">MUN Conferences App</a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav">
