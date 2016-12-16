@@ -6,7 +6,7 @@ Responsive web app for conferences and events
 Requirements
 ---
 
-* [PHP] >= 5.6
+* [PHP] (https://secure.php.net/downloads.php) >= 5.6
 
 ---
 
@@ -29,5 +29,3 @@ Setup
 
 ---
 Enjoy!
-
-[PHP]: <https://secure.php.net/downloads.php>
