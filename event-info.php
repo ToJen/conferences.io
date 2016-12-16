@@ -14,11 +14,6 @@
       .table-striped > tbody > tr:nth-child(odd) > th {
         background-color: #00B398;
       }
-
-      .image-responsive {
-        width: 100px !important;
-        height: 100px !important;
-      }
     </style>
   </head>
   <body>
@@ -49,7 +44,7 @@
         <div class="col-lg-3"><h2>Weather Forecast</h2></div>
         <div class="col-lg-3 col-md-4" id="temp"><p>-5&degC (23&degF) | Cloudy | Light Snow</p></div>
         <div class="col-lg-3 col-md-4" id="wind"><p>Wind: 40 KM/H | Precipitaion: 3% | Humidity: 72%</p></div>
-        <div class="col-lg-3 col-md-4" id="weather-icon"><img src="imgs/weather-icon-cloudy.png" class="image-responsive"></div>
+        <div class="col-lg-3 col-md-4" id="weather-icon"><img src="imgs/weather-icon-cloudy.png" class="image-responsive" style="width:100px; height:100px"></div>
       </div>
 
       <hr>
@@ -86,7 +81,7 @@
             </div>
         </div>
       </div> <!-- .row -->
-      <h4>View the full list of guests <a href="attendees.html">here</a>.</h4>
+      <h4>View the full list of guests <a href="attendees.php">here</a>.</h4>
 
       <hr>
 
