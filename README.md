@@ -1,2 +1,9 @@
-# conferences.io
-Responsive web app for managing conferences and events
+Conferences.io
+===
+
+Responsive web app for conferences and events
+
+Requirements
+==
+
+* PHP >= 5.6
