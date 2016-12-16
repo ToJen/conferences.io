@@ -15,7 +15,7 @@
 	          <div class="panel panel-info">
 	            <div class="panel-heading">
 	                <div class="panel-title">Sign Up</div>
-	                <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="signin.php">Already have an account? Sign In</a></div>
+	                <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="signin.php">I already have an account</a></div>
 	            </div>  
 	            <div class="panel-body" >
 	              <form id="signupform" class="form-horizontal" role="form">
@@ -60,7 +60,7 @@
 	                <div class="form-group">                       
 	                    <div class="col-md-offset-3 col-md-9">
 	                      <button id="btn-signup" type="button" class="btn btn-info">
-	                      	<i class="icon-hand-right"></i>&nbsp Sign Up
+	                      	Sign Up
 	                     	</button> 
 	                    </div>
 	                </div>                      
