@@ -140,14 +140,10 @@
 
       </div>
 
-      <hr>
-
-      <!-- FOOTER -->
-      <footer class="footer">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 MUN Conferences. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
     </div>
+    
+    <br><br>
+    <?php include("footer.php") ?>
 
     <script src="js/gallery.js"></script>
     <script src="js/map.js"></script>

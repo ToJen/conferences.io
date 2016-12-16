@@ -7,7 +7,6 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<!-- <link rel="stylesheet" href="css/styles.css"> -->
 	</head>
 	<body>
     <div class="container">    
@@ -16,7 +15,7 @@
 	          <div class="panel panel-info">
 	            <div class="panel-heading">
 	                <div class="panel-title">Sign Up</div>
-	                <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="signin.html">Already have an account? Sign In</a></div>
+	                <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="signin.php">Already have an account? Sign In</a></div>
 	            </div>  
 	            <div class="panel-body" >
 	              <form id="signupform" class="form-horizontal" role="form">
@@ -58,8 +57,7 @@
 	                    </div>
 	                </div>
 
-	                <div class="form-group">
-	                    <!-- Button -->                                        
+	                <div class="form-group">                       
 	                    <div class="col-md-offset-3 col-md-9">
 	                      <button id="btn-signup" type="button" class="btn btn-info">
 	                      	<i class="icon-hand-right"></i>&nbsp Sign Up
@@ -74,14 +72,8 @@
 
     </div>	<!-- .container --> 
 
-    <div class="container">
-    	<hr>
-    	<!-- FOOTER -->
-    	<footer class="footer">
-    	  <p class="pull-right"><a href="#">Back to top</a></p>
-    	  <p>&copy; 2016 MUN Conferences. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    	</footer>
-    </div>
+    <br><br>
+    <?php include("footer.php") ?>
     
 	</body>
 </html>

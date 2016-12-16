@@ -53,7 +53,7 @@
     	          <div class="form-group">
     	            <div class="col-md-12 control">
     	              <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
-    	                Don't have an account? <a href="signup.html">Sign up here</a>
+    	                Don't have an account? <a href="signup.php">Sign up here</a>
     	              </div>
     	            </div>
     	          </div>    
@@ -67,14 +67,8 @@
 
     </div>  <!-- .container -->
 
-    <div class="container">
-    	<hr>
-    	<!-- FOOTER -->
-    	<footer class="footer">
-    	  <p class="pull-right"><a href="#">Back to top</a></p>
-    	  <p>&copy; 2016 MUN Conferences. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    	</footer>
-    </div>
+    <br><br><br><br>
+    <?php include("footer.php") ?>
 
     
 	</body>
