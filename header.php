@@ -1,7 +1,7 @@
 <?php
 	
 	// $parent;	// the grand parent li element whose class is a dropdown
-	function echoActiveClass($requestURI, $elem) {
+	function echoActiveClass($requestURI) {
 		$curr = basename($_SERVER['REQUEST_URI'], ".php");
 		if($curr == $requestURI) {
 			echo 'class="active"';
@@ -40,7 +40,7 @@
 										<span class="caret"></span>
 									</a>
 									<ul class="dropdown-menu">
-										<li <?=echoActiveClass("campus-map", $this) ?> ><a href="campus-map.php">Campus</a></li>
+										<li <?=echoActiveClass("campus-map") ?> ><a href="campus-map.php">Campus</a></li>
 										<li><a href="#">City</a></li>
 									</ul>
 								</li>
