@@ -1,7 +1,7 @@
 Conferences.io
 ===
 
-Responsive web app for conferences and events
+Responsive web app for conferences and events.
 
 Requirements
 ---
