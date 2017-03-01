@@ -1,0 +1,85 @@
+-- Create conferences database
+CREATE SCHEMA mun_conferences;
+USE mun_conferences;
+SET AUTOCOMMIT = 0;
+
+-- User Table
+CREATE TABLE User
+(
+	userID INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	firstName VARCHAR(50) NOT NULL,
+	lastName VARCHAR(50) NOT NULL,
+	eMail VARCHAR(255) NOT NULL,
+	sex char(1) NOT NULL,
+	address VARCHAR(255),
+	birthDate DATE,
+	password VARCHAR(50) NOT NULL,
+	profilePic BLOB,
+	description TEXT,
+	jobTitle VARCHAR(100),
+	company VARCHAR(100),
+	phoneNo VARCHAR(50),
+	website VARCHAR(50),
+	linkedIn VARCHAR(50),
+	facebook VARCHAR(50),
+	PRIMARY KEY (userID)
+)ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1;
+
+-- Admin Table
+CREATE TABLE Admin
+(
+	adminNo INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	adminID INT(11) UNSIGNED NOT NULL,
+	fullAccess TINYINT(1) NOT NULL DEFAULT 0,
+	PRIMARY KEY (adminNo),
+	CONSTRAINT idFK0 FOREIGN KEY (adminID) REFERENCES User(userID)
+)ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
+
+-- Conference Table
+CREATE TABLE Conference
+(
+	confID INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	adminID INT(11) UNSIGNED NOT NULL,
+	name VARCHAR(50) NOT NULL,
+	description TEXT,
+	banner BLOB,
+	venue VARCHAR(100) NOT NULL,
+	confDate DATETIME NOT NULL,
+	capacity INT(11) UNSIGNED,
+	PRIMARY KEY (confID),
+	CONSTRAINT idFK1 FOREIGN KEY (adminID) REFERENCES Admin(adminID)
+)ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1;
+
+-- Attendee Table
+CREATE TABLE Attendee
+(
+	attendeeID INT(11) UNSIGNED NOT NULL,
+	confID INT(11) UNSIGNED NOT NULL,
+	inviteCode VARCHAR(50),
+	PRIMARY KEY (attendeeID, confID),
+	CONSTRAINT idFK2 FOREIGN KEY (attendeeID) REFERENCES User(userID),
+	CONSTRAINT idFK3 FOREIGN KEY (confID) REFERENCES Conference(confID)
+);
+
+-- Speaker Table
+CREATE TABLE Speaker
+(
+	speakerID INT(11) UNSIGNED NOT NULL,
+	confID INT(11) UNSIGNED NOT NULL,
+	PRIMARY KEY (speakerID, confID),
+	CONSTRAINT idFK4 FOREIGN KEY (speakerID) REFERENCES User(userID),
+	CONSTRAINT idFK5 FOREIGN KEY (confID) REFERENCES Conference(confID)
+);
+
+-- Sponsor Table
+CREATE TABLE Sponsor
+(
+	sponsorID INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	confID INT(11) UNSIGNED NOT NULL,
+	name VARCHAR(50) NOT NULL,
+	logo BLOB,
+	description TEXT,
+	website VARCHAR(50),
+	PRIMARY KEY (sponsorID),
+	CONSTRAINT idFK6 FOREIGN KEY (confID) REFERENCES Conference(confID)
+)ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1;
