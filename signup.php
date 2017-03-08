@@ -40,7 +40,7 @@
 		                <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="signin.php">I already have an account</a></div>
 		            </div>  
 		            <div class="panel-body" >
-		              	<form id="signupform" action="validate.php" data-toggle="validator" method="post" class="form-horizontal" role="form">
+		              	<form id="signupform" action="" data-toggle="validator" method="post" class="form-horizontal" role="form">
 			                <div id="signupalert" style="display:none" class="alert alert-danger">
 			                    <p>Error:</p>
 			                    <span></span>
@@ -80,7 +80,7 @@
 			                <div class="form-group">
 			                    <label for="confirmPassword" class="col-md-3 control-label">Confirm password</label>
 			                    <div class="col-md-9">
-			                      	<input type="password" id="confirmPassword" class="form-control" name="confirmPassword" placeholder="Confirm password" data-match="#password" data-match-error="Passwords do not match" required>
+			                      	<input type="password" id="confirmPassword" class="form-control" name="confirmPassword" placeholder="Confirm password" data-error="Please confirm password" data-match="#password" data-match-error="Passwords do not match" required>
 			                      	<div class="help-block with-errors"></div>
 			                    </div>
 			                </div>
