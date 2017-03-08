@@ -17,8 +17,7 @@
             <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
                 <?php 
                     if($_GET["regSuccess"])
-                        echo "<div class=\"alert alert-success text-center\">";
-                        echo "<strong>Registration successful!</strong> You may now sign in.</div>"
+                        echo "<div class=\"alert alert-success text-center\"><strong>Registration successful!</strong> You may now sign in.</div>"
                 ?>
                 <div class="panel panel-info">
                     <div class="panel-heading">

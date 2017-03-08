@@ -31,9 +31,10 @@
   	// insert data in db
   	$sql = "INSERT INTO User(firstName,lastName,eMail,username,password,birthDate,sex) VALUES('$fname','$lname','$email','$email','$pass','$date','$sex');";
 
-	if($conn->query($sql) === TRUE)			// if successful
-		die(header("location:signin.php?regSuccess=1"));
-	else 									// otherwise
+  	// check if query was successful
+	if($conn->query($sql) === TRUE)
+		die(header("location:signin.php?regSuccess=1"));	// redirect user with feedback
+	else
  		printf("Query failed: %s", $conn->error);
 	
 	// close sql connection
