@@ -9,9 +9,9 @@
   	$conn = new mysqli($servername, $username, $password, $database);
 
   	if($conn)
-  		printf("Connection successful!" . "\n");
+  		printf("Connection successful!");
   	else
-  		printf("Connection failed: %s" . "\n", $conn->error);
+  		printf("Connection failed: %s", $conn->error);
 
   	// retrieve data to insert into db
   	$fname = $_POST["firstname"];
@@ -22,7 +22,7 @@
   	$sex   = $_POST["sex"];
 
   	// format date as yyyy-mm-dd
-  	$date = substr($date,6) . '-' . substr($date,3,2) . '-' . substr($date,0,2);
+  	$date = substr($date,6) . '-' . substr($date,0,2) . '-' . substr($date,3,2);
 
   	// set value of sex as boolean
   	if(strcmp($sex, 'M')) $sex = 0;
@@ -32,9 +32,9 @@
   	$sql = "INSERT INTO User(firstName,lastName,eMail,username,password,birthDate,sex) VALUES('$fname','$lname','$email','$email','$pass','$date','$sex');";
 
 	if($conn->query($sql) === TRUE)			// if successful
-		printf("Query successful!" . "\n");
+		printf("Query successful!");
 	else 									// otherwise
- 		printf("Query failed: %s" . "\n", $conn->error);
+ 		printf("Query failed: %s", $conn->error);
 	
 	// close sql connection
 	$conn->close();
