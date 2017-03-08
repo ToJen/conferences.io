@@ -16,7 +16,7 @@
     $pass = $_POST['password'];
 
     // check if username and password exists in db
-    $sql = "select username, password from User where username='$uname' and password='$pass';";
+    $sql = "SELECT username, password FROM User WHERE username='$uname' AND password='$pass';";
 
     // run and save results of query
     $result = $conn->query($sql);
