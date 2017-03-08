@@ -8,6 +8,30 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+		<script type="text/javascript">
+			function checkEmail()
+			{
+                var email = $("#email").val();
+                $.ajax({
+                    type: "POST",
+                    url:  "validate.php",
+                    data: {email: email},
+                    success: function(data)
+                    {
+                        if(data == 'true')
+                        {
+                            $("#emailErr").removeClass('hidden');
+                            $("#emailDiv").addClass('has-error');
+                        }
+                        else
+						{
+							$("#emailErr").addClass('hidden');
+							//$("#emailDiv").removeClass('has-error');
+						}
+                    }
+                });
+        	}
+        </script>
 
 		<!-- Bootstrap Date-picker Plugin -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
@@ -62,11 +86,12 @@
 				                </div>
 				            </div>
 
-			                <div class="form-group">
+			                <div id="emailDiv" class="form-group">
 			                    <label for="email" class="col-md-3 control-label">Email</label>
 			                    <div class="col-md-9">
-			                      	<input type="email" id="email" class="form-control" name="email" placeholder="Email Address" data-error="Invalid email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" required>
+			                      	<input type="email" id="email" class="form-control" name="email" placeholder="Email Address" onkeyup="checkEmail();" data-error="Invalid email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" required>
 			                      	<div class="help-block with-errors"></div>
+			                      	<div id="emailErr" class="text-danger hidden">Email already in use</div>
 			                    </div>
 			                </div>
 
