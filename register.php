@@ -32,7 +32,7 @@
   	$sql = "INSERT INTO User(firstName,lastName,eMail,username,password,birthDate,sex) VALUES('$fname','$lname','$email','$email','$pass','$date','$sex');";
 
 	if($conn->query($sql) === TRUE)			// if successful
-		printf("Query successful!");
+		die(header("location:signin.php?regSuccess=1"));
 	else 									// otherwise
  		printf("Query failed: %s", $conn->error);
 	

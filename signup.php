@@ -28,38 +28,39 @@
 	</head>
 	<body>
 		<?php include('header.php'); ?>
-		<br />
-		<br />
+		<br>
+		<br>
 
 	    <div class="container">    
-	   
 	        <div id="signupbox" style="margin-top:50px" class="mainbox col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
 		        <div class="panel panel-info">
 		            <div class="panel-heading">
 		                <div class="panel-title">Sign Up</div>
-		                <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="signin.php">I already have an account</a></div>
-		            </div>  
-		            <div class="panel-body" >
+		                <div style="float:right; font-size: 85%; position: relative; top:-10px">
+		                	<a id="signinlink" href="signin.php">I already have an account</a>
+		                </div>
+			        </div>
+			        <div class="panel-body" >
 		              	<form id="signupform" action="register.php" data-toggle="validator" method="post" class="form-horizontal" role="form">
 			                <div id="signupalert" style="display:none" class="alert alert-danger">
 			                    <p>Error:</p>
 			                    <span></span>
-			                </div>
-		                
+							</div>
+			                
 			                <div class="form-group">
 			                    <label for="firstname" class="col-md-3 control-label">First Name</label>
 			                    <div class="col-md-9">
 									<input type="text" id="firstname" class="form-control" name="firstname" placeholder="First Name" data-error="First name required" required>
 									<div class="help-block with-errors"></div>
-			                    </div>
+				                </div>
 			                </div>
-			                <div class="form-group">
+				            <div class="form-group">
 			                    <label for="lastname" class="col-md-3 control-label">Last Name</label>
 			                    <div class="col-md-9">
-			                    	<input type="text" id="lastname" class="form-control" name="lastname" placeholder="Last Name" data-error="Last name required" required>
-			                      	<div class="help-block with-errors"></div>
-			                    </div>
-			                </div>
+				                    <input type="text" id="lastname" class="form-control" name="lastname" placeholder="Last Name" data-error="Last name required" required>
+									<div class="help-block with-errors"></div>
+				                </div>
+				            </div>
 
 			                <div class="form-group">
 			                    <label for="email" class="col-md-3 control-label">Email</label>
@@ -114,14 +115,12 @@
 			                      <input id="submit" type="submit" name="submit" class="btn btn-info" value="Sign Up"> 
 			                    </div>
 			                </div>                      
-			            </form>
+						</form>
 		          	</div>
 		        </div>
 	        </div>
 	    </div>
-
 	    <br><br>
 	    <?php include("footer.php") ?>
-    
 	</body>
 </html>
