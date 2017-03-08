@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 
 		<!-- Bootstrap Date-picker Plugin -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
@@ -40,7 +40,7 @@
 		                <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="signin.php">I already have an account</a></div>
 		            </div>  
 		            <div class="panel-body" >
-		              	<form id="signupform" action="" data-toggle="validator" method="post" class="form-horizontal" role="form">
+		              	<form id="signupform" action="register.php" data-toggle="validator" method="post" class="form-horizontal" role="form">
 			                <div id="signupalert" style="display:none" class="alert alert-danger">
 			                    <p>Error:</p>
 			                    <span></span>
@@ -64,7 +64,7 @@
 			                <div class="form-group">
 			                    <label for="email" class="col-md-3 control-label">Email</label>
 			                    <div class="col-md-9">
-			                      	<input type="email" id="email" class="form-control" name="email" placeholder="Email Address" data-error="Invalid email address" required>
+			                      	<input type="email" id="email" class="form-control" name="email" placeholder="Email Address" data-error="Invalid email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" required>
 			                      	<div class="help-block with-errors"></div>
 			                    </div>
 			                </div>
