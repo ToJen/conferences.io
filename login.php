@@ -16,7 +16,7 @@
     $pass = $_POST['password'];
 
     // check if username and password exists in db
-    $sql = "SELECT username, password FROM User WHERE username='$uname' AND password='$pass';";
+    $sql = "SELECT firstName, lastName FROM User WHERE username='$uname' AND password='$pass';";
 
     // run and save results of query
     $result = $conn->query($sql);
@@ -34,8 +34,11 @@
         $_SESSION["firstName"] = $fname;
         $_SESSION["lastName"] = $lname;
 
+        // close sql connection
+        $conn->close();
+
         // redirect user to home page
-        die(header("location:index.php?loginSuccess=1"));
+        die(header("location:index.php"));
     }
     else
         printf("Query failed: %s", $conn->error);

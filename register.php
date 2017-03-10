@@ -33,7 +33,13 @@
 
   	// check if query was successful
 	if($conn->query($sql) === TRUE)
-		die(header("location:signin.php?regSuccess=1"));	// redirect user with feedback
+	{
+		// close sql connection
+		$conn->close();
+
+		// redirect user with feedback
+		die(header("location:signin.php?regSuccess=1"));
+	}
 	else
  		printf("Query failed: %s", $conn->error);
 	
