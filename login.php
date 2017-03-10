@@ -24,6 +24,7 @@
     // Handle results
     if($result->num_rows == 1)
     {
+        // fetch required fields
         while($row = $result->fetch_assoc()) 
         {
             $fname  = $row["firstName"];
@@ -41,8 +42,11 @@
         die(header("location:index.php"));
     }
     else
-        printf("Query failed: %s", $conn->error);
-    
-    // close sql connection
-    $conn->close();
+    {
+        // close sql connection
+        $conn->close();
+
+        // redirect user to sign in page with error
+        die(header("location:signin.php?loginError=1"));
+    }
 ?>
