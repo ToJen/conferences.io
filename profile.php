@@ -12,81 +12,13 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/profile.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 		<script type="text/javascript" src="js/email.js"></script>
 		<script type="text/javascript" src="js/datepicker.js"></script>
-		<style>
-			.panel 
-			{
-				border-color: #white;
-				width: 100%;
-			}
-			.panel > .panel-heading 
-			{
-				background-color: #00B398;
-				border-color: white;
-				color: white;
-				font-weight: bold;
-			}
-
-			.panel > .panel-body > a 
-			{
-				color: #00B398;
-			}
-			
-			.fa 
-			{
-				padding-left: 0.25em;
-				padding-right: 0.25em;
-			}
-
-			/* Stick to original logo colors */
-			.fa-facebook
-			{
-				color: #3b5998;
-			}
-
-			.fa-twitter
-			{
-				color: #00a0d1;
-			}
-
-			.fa-linkedin
-			{
-				color: #4875B4;
-			}
-
-			.fa-instagram
-			{
-				color: #4E433C;
-			}
-
-			.fa-google-plus
-			{
-				color: #C63D2D;
-			}
-
-			/* Smart phones */
-			@media only screen and (max-width: 480px)
-			{
-			   .fa { font-size: 2em; }
-			}
-
-			/* Tablets */
-			@media only screen and (min-width: 481px) and (max-width: 1024px)
-			{
-			   .fa { font-size: 3em; }
-			}
-
-			/* Laptops or desktops */
-			@media only screen and (min-width: 1025px)
-			{
-			   .fa { font-size: 3.5em; }
-			}
-		</style>
 	</head>
 
 	<body>
