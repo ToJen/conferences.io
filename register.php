@@ -1,6 +1,6 @@
 <?php
-	// variables for sql connection
-	$servername = "localhost";
+  	// variables for sql connection
+  	$servername = "localhost";
     $username = "root";
     $password = "";
     $database = "mun_conferences";

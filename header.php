@@ -80,7 +80,7 @@
 					echo "<span class=\"caret\"></span>";
 					echo "</a>";
 					echo "<ul class=\"dropdown-menu\">";
-					echo "<li " . echoActiveClass("profile") . "><a href=\"#\">Profile</a></li>";
+					echo "<li " . echoActiveClass("profile") . "><a href=\"profile.php\">Profile</a></li>";
 					echo "<li " . echoActiveClass("settings") . "><a href=\"#\">Settings</a></li>";
 					echo "<li " . echoActiveClass("signout") . "><a href=\"signout.php\">Sign out</a></li>";
 					echo "</ul>";

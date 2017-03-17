@@ -1,4 +1,5 @@
 -- Create conferences database
+DROP SCHEMA IF EXISTS mun_conferences;
 CREATE SCHEMA mun_conferences;
 USE mun_conferences;
 SET AUTOCOMMIT = 0;
@@ -15,7 +16,7 @@ CREATE TABLE User
 	birthDate DATE NOT NULL,
 	sex char(1) NOT NULL,
 	address VARCHAR(255),
-	profilePic BLOB,
+	profilePic VARCHAR(50),
 	description TEXT,
 	jobTitle VARCHAR(100),
 	company VARCHAR(100),
@@ -23,6 +24,9 @@ CREATE TABLE User
 	website VARCHAR(50),
 	linkedIn VARCHAR(50),
 	facebook VARCHAR(50),
+	twitter VARCHAR(50),
+	instagram VARCHAR(50),
+	googleplus VARCHAR(50),
 	PRIMARY KEY (userID)
 )ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1;
 
