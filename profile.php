@@ -70,7 +70,8 @@
 	    <br>
         <div class="row" style="background-color: #00B398;">
         	<div class="col-xs-12 text-center">
-        		<img class="img-circle" style="margin-top: 30px; border: 4px solid white; background: white;" src="imgs/profile.png" width="100px" height="100px">
+        		<img class="img-circle" style="margin-top: 30px; border: 4px solid white; background: white;" 
+        		<?php if($pic === NULL) echo "src=\"imgs/profile.png\""; else echo "src=\"imgs/$pic\""; ?> width="100px" height="100px">
         		<h4 style="color: white;"><?php echo "$fname $lname"; ?></h4>
         		<h5 style="color: white;"><?php echo "($uname)"; ?></h3>
         	</div>
