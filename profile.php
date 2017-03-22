@@ -167,7 +167,7 @@
 	    <div class="row">
 	   		<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
 	   			<div class="text-center">
-	   				<button class="btn btn-primary" href="edit-profile.php">Edit Profile</button>
+	   				<a class="btn btn-primary" href="edit-profile.php">Edit Profile</a>
 	   			</div>
 		    </div>
 	    </div>
