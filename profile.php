@@ -46,6 +46,9 @@
             $gplus = $row["googlePlus"];
         }
     }
+    
+    // format birthday as dd/mm/yyyy
+    $bday = substr($bday,8) . '/' . substr($bday,5,2) . '/' . substr($bday,0,4);
 
     // close sql connection
     $conn->close();
