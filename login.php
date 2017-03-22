@@ -16,24 +16,22 @@
     $pass = $_POST['password'];
 
     // check if username and password exists in db
-    $sql = "SELECT firstName, lastName FROM User WHERE username='$uname' AND password='$pass';";
+    $sql = "SELECT userID, firstName, lastName FROM User WHERE username='$uname' AND password='$pass';";
 
     // run and save results of query
     $result = $conn->query($sql);
 
-    // Handle results
+    // handle results
     if($result->num_rows == 1)
     {
         // fetch required fields
         while($row = $result->fetch_assoc()) 
         {
-            $fname  = $row["firstName"];
-            $lname  = $row["lastName"];
+            // set session vars
+            $_SESSION["uid"] = $row["userID"];
+            $_SESSION["firstName"]  = $row["firstName"];
+            $_SESSION["lastName"]  = $row["lastName"];
         }
-        
-        // set the session vars
-        $_SESSION["firstName"] = $fname;
-        $_SESSION["lastName"] = $lname;
 
         // close sql connection
         $conn->close();
