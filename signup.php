@@ -101,7 +101,7 @@
 
 			                <div class="form-group">                       
 			                    <div class="col-md-offset-3 col-md-9">
-			                      <input id="submit" type="submit" name="submit" class="btn btn-info" value="Sign Up"> 
+			                      <input id="submit" type="submit" name="submit" class="btn btn-primary" value="Sign Up"> 
 			                    </div>
 			                </div>                      
 						</form>
