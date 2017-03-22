@@ -1,34 +1,15 @@
 <?php
 	// start session
 	session_start();
-
-
-	// $parent;	// the grand parent li element whose class is a dropdown
-	function echoActiveClass($requestURI) {
-		$curr = basename($_SERVER['REQUEST_URI'], ".php");
-		if($curr == $requestURI) {
-			echo 'class="active"';
-
-			// try to get this working
-			/*$parent = $elem->parentNode;
-			while($parent->tagName != "li") {
-				$parent = $parent->parentNode;
-			}
-			// $sibling = $parent->getPreviousSibling;
-			$class = $parent->getAttribute("class");	// get any existing classes
-			$parent->setAttribute('class', $class . " active");*/
-		}
-	}
-	
 ?>
 
 <style>
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a {
-    background-color: #00B398;
+  .header {
+  	min-width: 100%;
   }
 
-  .header{
-  	min-width: 100%;
+  .header > li:hover {
+  	background-color: #00B398;
   }
 </style>
 
@@ -47,7 +28,7 @@
 						<span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu header">
-						<li <?=echoActiveClass("campus-map") ?> ><a href="campus-map.php">Campus</a></li>
+						<li><a href="campus-map.php">Campus</a></li>
 						<li><a href="#">City</a></li>
 					</ul>
 				</li>
@@ -56,9 +37,9 @@
 						<span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu header">
-						<li <?=echoActiveClass("event-info") ?> ><a href="event-info.php">About</a></li>
-						<li <?=echoActiveClass("attendees") ?> ><a href="attendees.php">Guests</a></li>
-						<li <?=echoActiveClass("sponsors") ?> ><a href="sponsors.php">Sponsors</a></li>
+						<li><a href="event-info.php">About</a></li>
+						<li><a href="attendees.php">Guests</a></li>
+						<li><a href="sponsors.php">Sponsors</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -79,10 +60,10 @@
 					echo "<a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">$fname $lname ";
 					echo "<span class=\"caret\"></span>";
 					echo "</a>";
-					echo "<ul class=\"dropdown-menu\">";
-					echo "<li " . echoActiveClass("profile") . "><a href=\"profile.php\">Profile</a></li>";
-					echo "<li " . echoActiveClass("settings") . "><a href=\"#\">Settings</a></li>";
-					echo "<li " . echoActiveClass("signout") . "><a href=\"signout.php\">Sign out</a></li>";
+					echo "<ul class=\"dropdown-menu header\">";
+					echo "<li><a href=\"profile.php\">Profile</a></li>";
+					echo "<li><a href=\"settings.php\">Settings</a></li>";
+					echo "<li><a href=\"signout.php\">Sign out</a></li>";
 					echo "</ul>";
 					echo "</li>";
 				}
