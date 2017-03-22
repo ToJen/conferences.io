@@ -22,7 +22,7 @@
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
-				<li <?=echoActiveClass("index") ?> ><a href="index.php">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li class="dropdown">
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Explore
 						<span class="caret"></span>
