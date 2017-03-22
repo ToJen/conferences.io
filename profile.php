@@ -145,10 +145,19 @@
 	        		<div class="panel-body text-center">
 	        			<?php
 			    		if($lin   !== NULL) echo "<a href=\"$lin\"><i class=\"fa fa-linkedin\"></i></a>";
+			    		else   				echo "<a><i class=\"fa fa-linkedin inactive\"></i></a>";
+
 			    		if($fb    !== NULL) echo "<a href=\"$fb\"><i class=\"fa fa-facebook\"></i></a>";
+			    		else   				echo "<a><i class=\"fa fa-facebook inactive\"></i></a>";
+
 			    		if($twt   !== NULL) echo "<a href=\"$twt\"><i class=\"fa fa-twitter\"></i></a>";
+			    		else   				echo "<a><i class=\"fa fa-twitter inactive\"></i></a>";
+
 			    		if($inst  !== NULL) echo "<a href=\"$inst\"><i class=\"fa fa-instagram\"></i></a>";
+			    		else   				echo "<a><i class=\"fa fa-instagram inactive\"></i></a>";
+
 			    		if($gplus !== NULL) echo "<a href=\"$gplus\"><i class=\"fa fa-google-plus\"></i></a>";
+			    		else   				echo "<a><i class=\"fa fa-google-plus inactive\"></i></a>";
 			    		?>
 		    		</div>
 		    	</div>

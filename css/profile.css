@@ -48,6 +48,13 @@
 	color: #C63D2D;
 }
 
+/* For inactive social media links */
+.inactive
+{
+	color: #B4B4B4;
+	cursor: not-allowed;
+}
+
 /* Smart phones */
 @media only screen and (max-width: 480px)
 {
