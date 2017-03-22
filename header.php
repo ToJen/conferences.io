@@ -27,7 +27,7 @@
     background-color: #00B398;
   }
 
-  .dropdown-menu{
+  .header{
   	min-width: 100%;
   }
 </style>
@@ -46,7 +46,7 @@
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Explore
 						<span class="caret"></span>
 					</a>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu header">
 						<li <?=echoActiveClass("campus-map") ?> ><a href="campus-map.php">Campus</a></li>
 						<li><a href="#">City</a></li>
 					</ul>
@@ -55,7 +55,7 @@
 					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Event Details
 						<span class="caret"></span>
 					</a>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu header">
 						<li <?=echoActiveClass("event-info") ?> ><a href="event-info.php">About</a></li>
 						<li <?=echoActiveClass("attendees") ?> ><a href="attendees.php">Guests</a></li>
 						<li <?=echoActiveClass("sponsors") ?> ><a href="sponsors.php">Sponsors</a></li>
