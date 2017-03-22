@@ -31,18 +31,18 @@
             // save data
             $email = $row["email"];
             $uname = $row["username"];
-            $bday = $row["birthDate"];
-            $add = $row["address"];
-            $pic = $row["profilePic"];
-            $desc = $row["description"];
-            $job = $row["jobTitle"];
-            $comp = $row["company"];
-            $phno = $row["phoneNo"];
-            $web = $row["website"];
-            $lin = $row["linkedIn"];
-            $fb = $row["facebook"];
-            $twt = $row["twitter"];
-            $inst = $row["instagram"];
+            $bday  = $row["birthDate"];
+            $add   = $row["address"];
+            $pic   = $row["profilePic"];
+            $desc  = $row["description"];
+            $job   = $row["jobTitle"];
+            $comp  = $row["company"];
+            $phno  = $row["phoneNo"];
+            $web   = $row["website"];
+            $lin   = $row["linkedIn"];
+            $fb    = $row["facebook"];
+            $twt   = $row["twitter"];
+            $inst  = $row["instagram"];
             $gplus = $row["googlePlus"];
         }
     }
@@ -58,15 +58,10 @@
 	    <title>My Profile - MUN Conferences</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
 		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/profile.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-		<script type="text/javascript" src="js/email.js"></script>
-		<script type="text/javascript" src="js/datepicker.js"></script>
 	</head>
 
 	<body>
@@ -157,6 +152,14 @@
 			    		?>
 		    		</div>
 		    	</div>
+		    </div>
+	    </div>
+
+	    <div class="row">
+	   		<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+	   			<div class="text-center">
+	   				<button class="btn btn-primary" href="edit-profile.php">Edit Profile</button>
+	   			</div>
 		    </div>
 	    </div>
 
