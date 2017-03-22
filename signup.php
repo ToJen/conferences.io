@@ -88,12 +88,12 @@
 			                    <div class="col-md-9">
 			                      	<div class="radio">
 			                    		<label>	
-											<input type="radio" class="form-horizontal" name="sex" value="male" required> M
+											<input type="radio" class="form-horizontal" name="sex" value="M" required> M
 										</label>
 									</div>
 									<div class="radio">
 										<label>
-			                      			<input type="radio" class="form-horizontal" name="sex" value="female" required> F
+			                      			<input type="radio" class="form-horizontal" name="sex" value="F" required> F
 			                      		</label>
 			                      	</div>
 			                    </div>
