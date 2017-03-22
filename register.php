@@ -24,12 +24,8 @@
   	// format date as yyyy-mm-dd
   	$date = substr($date,6) . '-' . substr($date,0,2) . '-' . substr($date,3,2);
 
-  	// set value of sex as boolean
-  	if(strcmp($sex, 'M')) $sex = 0;
-  	else 				  $sex = 1;
-
   	// insert data in db
-  	$sql = "INSERT INTO User(firstName,lastName,eMail,username,password,birthDate,sex) VALUES('$fname','$lname','$email','$email','$pass','$date','$sex');";
+  	$sql = "INSERT INTO User(firstName,lastName,email,username,password,birthDate,sex) VALUES('$fname','$lname','$email','$email','$pass','$date','$sex');";
 
   	// check if query was successful
 	if($conn->query($sql) === TRUE)
