@@ -84,16 +84,16 @@
 			                </div>
 
 			                <div class="form-group">
-			                    <label for="sex" class="col-md-3 control-label">Sex</label>
+			                    <label class="col-md-3 control-label">Sex</label>
 			                    <div class="col-md-9">
 			                      	<div class="radio">
-			                    		<label>	
-											<input type="radio" class="form-horizontal" name="sex" value="M" required> M
+			                    		<label for="male">	
+											<input id="male" type="radio" class="form-horizontal" name="sex" value="M" required> M
 										</label>
 									</div>
 									<div class="radio">
-										<label>
-			                      			<input type="radio" class="form-horizontal" name="sex" value="F" required> F
+										<label for="female">
+			                      			<input id="female" type="radio" class="form-horizontal" name="sex" value="F" required> F
 			                      		</label>
 			                      	</div>
 			                    </div>
