@@ -36,14 +36,14 @@
 			                
 			                <div class="form-group">
 			                    <label for="firstname" class="col-md-3 control-label">First Name</label>
-			                    <div class="col-md-9">
+			                    <div class="col-md-8">
 									<input type="text" id="firstname" class="form-control" name="firstname" placeholder="First Name" data-error="First name required" required>
 									<div class="help-block with-errors"></div>
 				                </div>
 			                </div>
 				            <div class="form-group">
 			                    <label for="lastname" class="col-md-3 control-label">Last Name</label>
-			                    <div class="col-md-9">
+			                    <div class="col-md-8">
 				                    <input type="text" id="lastname" class="form-control" name="lastname" placeholder="Last Name" data-error="Last name required" required>
 									<div class="help-block with-errors"></div>
 				                </div>
@@ -51,7 +51,7 @@
 
 			                <div class="form-group">
 			                    <label for="email" class="col-md-3 control-label">Email</label>
-			                    <div class="col-md-9">
+			                    <div class="col-md-8">
 			                    	<div id="emailDiv">
 			                      	<input type="email" id="email" class="form-control" name="email" placeholder="Email Address" onkeyup="checkEmail();" data-error="Invalid email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" required></div>
 			                      	<div class="help-block with-errors"></div>
@@ -61,7 +61,7 @@
 
 			                <div class="form-group">
 			                    <label for="password" class="col-md-3 control-label">Password</label>
-			                    <div class="col-md-9">
+			                    <div class="col-md-8">
 			                      	<input type="password" data-minlength="6" id="password" class="form-control" name="password" placeholder="Password" required>
 			                      	<div class="help-block">Password should be at least 6 characters</div>
 			                    </div>
@@ -69,7 +69,7 @@
 
 			                <div class="form-group">
 			                    <label for="confirmPassword" class="col-md-3 control-label">Confirm password</label>
-			                    <div class="col-md-9">
+			                    <div class="col-md-8">
 			                      	<input type="password" id="confirmPassword" class="form-control" name="confirmPassword" placeholder="Confirm password" data-error="Please confirm password" data-match="#password" data-match-error="Passwords do not match" required>
 			                      	<div class="help-block with-errors"></div>
 			                    </div>
@@ -77,7 +77,7 @@
 
 			                <div class="form-group">
 			                    <label for="birthday" class="col-md-3 control-label">Birthday</label>
-			                    <div class="col-md-9">
+			                    <div class="col-md-8">
 									<input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text" data-error="Birthday required" required>
 			                      	<div class="help-block with-errors"></div>
 			                    </div>
@@ -85,7 +85,7 @@
 
 			                <div class="form-group">
 			                    <label class="col-md-3 control-label">Sex</label>
-			                    <div class="col-md-9">
+			                    <div class="col-md-8">
 			                      	<div class="radio">
 			                    		<label for="male">	
 											<input id="male" type="radio" class="form-horizontal" name="sex" value="M" required> M
@@ -100,7 +100,7 @@
 			                </div>
 
 			                <div class="form-group">                       
-			                    <div class="col-md-offset-3 col-md-9">
+			                    <div class="col-md-8">
 			                      <input id="submit" type="submit" name="submit" class="btn btn-primary" value="Sign Up"> 
 			                    </div>
 			                </div>                      
