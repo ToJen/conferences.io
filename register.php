@@ -8,6 +8,7 @@
     // establish sql connection
   	$conn = new mysqli($servername, $username, $password, $database);
 
+    // for debugging
   	if($conn)
   		printf("Connection successful!");
   	else
