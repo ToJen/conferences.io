@@ -19,7 +19,7 @@
   	$lname = $_POST["lastname"];
   	$email = $_POST["email"];
   	$pass  = $_POST["password"];
-  	$date  = $_POST["date"];
+  	$bdate  = $_POST["date"];
   	$sex   = $_POST["sex"];
 
   	// format date as yyyy-mm-dd
