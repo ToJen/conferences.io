@@ -6,7 +6,7 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
@@ -35,14 +35,14 @@
 							</div>
 			                
 			                <div class="form-group">
-			                    <label for="firstname" class="col-md-3 control-label">First Name</label>
+			                    <label for="firstname" class="col-md-3 control-label">First name</label>
 			                    <div class="col-md-8">
 									<input type="text" id="firstname" class="form-control" name="firstname" placeholder="First Name" data-error="First name required" required>
 									<div class="help-block with-errors"></div>
 				                </div>
 			                </div>
 				            <div class="form-group">
-			                    <label for="lastname" class="col-md-3 control-label">Last Name</label>
+			                    <label for="lastname" class="col-md-3 control-label">Last name</label>
 			                    <div class="col-md-8">
 				                    <input type="text" id="lastname" class="form-control" name="lastname" placeholder="Last Name" data-error="Last name required" required>
 									<div class="help-block with-errors"></div>
