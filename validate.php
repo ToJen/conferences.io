@@ -5,14 +5,8 @@
 	// retrieve user id
 	$uid = $_SESSION["uid"];
 
-	// variables for sql connection
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$database = "mun_conferences";
-
-	// establish sql connection
-	$conn = new mysqli($servername, $username, $password, $database);
+	// connect to db
+	include('mysql-conn.php');
 
 	// get email
 	$email = $_POST["email"];
