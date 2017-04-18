@@ -2,21 +2,15 @@
     // start session
     session_start();
 
-    // variables for sql connection 
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "mun_conferences";
-
-    // establish sql connection
-    $conn = new mysqli($servername, $username, $password, $database);
+    // connect to db
+    include('mysql-conn.php');
 
     // retrieve username and password
     $uname = $_POST['username'];
     $pass = $_POST['password'];
 
     // check if username and password exists in db
-    $sql = "SELECT userID, firstName, lastName FROM User WHERE username='$uname' AND password='$pass';";
+    $sql = "SELECT userID, firstName, lastName FROM User WHERE (username='$uname' OR email='$uname') AND password='$pass';";
 
     // run and save results of query
     $result = $conn->query($sql);
@@ -43,6 +37,8 @@
     {
         // close sql connection
         $conn->close();
+
+        //  printf("Query failed: %s", $conn->error);
 
         // redirect user to sign in page with error
         die(header("location:signin.php?loginError=1"));
