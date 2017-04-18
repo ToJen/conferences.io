@@ -5,6 +5,7 @@
 	    <title>Sign Up - MUN Conferences</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -78,7 +79,7 @@
 			                <div class="form-group">
 			                    <label for="birthday" class="col-md-3 control-label">Birthday</label>
 			                    <div class="col-md-8">
-									<input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text" data-error="Birthday required" required>
+									<input class="form-control" id="date" name="date" placeholder="DD/MM/YYYY" type="text" data-error="Birthday required" required>
 			                      	<div class="help-block with-errors"></div>
 			                    </div>
 			                </div>
