@@ -1,6 +1,48 @@
+h4
+{
+	color: #00B398;
+}
+
+.edit-box
+{
+	text-align: center;
+}
+
+.edit
+{
+	display: inline-block;
+	height: 60px;
+	position: relative;
+	vertical-align: top;
+}
+
+.edit > a
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: white;
+}
+
+.glyphicon
+{
+	font-size: 1.5em;
+}
+
+.profile-pic > img
+{
+	border: 4px solid white;
+	background: white;
+}
+
+.row
+{
+	padding-bottom: 10px;
+}
+
 .panel 
 {
-	border-color: #white;
+	border-color: white;
 	width: 100%;
 }
 .panel > .panel-heading 
@@ -58,17 +100,20 @@
 /* Smart phones */
 @media only screen and (max-width: 480px)
 {
-   .fa { font-size: 2em; }
+   .fa { font-size: 2.5em; }
+   .edit {	width: 50%;	}
 }
 
 /* Tablets */
 @media only screen and (min-width: 481px) and (max-width: 1024px)
 {
    .fa { font-size: 3em; }
+   .edit {	width: 50%;	}
 }
 
 /* Laptops or desktops */
 @media only screen and (min-width: 1025px)
 {
-   .fa { font-size: 3.5em; }
+   .fa { font-size: 3em; }
+   .edit {	width: 30%;	}
 }
