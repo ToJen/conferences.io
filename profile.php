@@ -90,12 +90,17 @@
         	</div>
         </div>
         <br>
-        <!-- <div class="row">
-	        <div class="col-xs-12 text-center">
-        		<div class="h4" style="color: #00B398;"><?php if($job === NULL || trim($job) === '') echo "Job title"; else echo "$job"; ?></div>
-        		<div class="h5"><?php if($comp === NULL || trim($comp) === '') echo "Company name"; else echo "$comp"; ?></div>
-		    </div>
-	    </div> -->
+
+        <?php 
+	        if($_GET["updateSuccess"])
+	        {
+	        	echo "<div class=\"row\">";
+	        	echo "<div class=\"col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4\">";
+	            echo "<div class=\"alert alert-success text-center\"><strong>Profile successfully updated!</strong></div>";
+	            echo "</div>";
+	            echo "</div>";
+	        }
+        ?>
 
         <div class="row">
 	        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">

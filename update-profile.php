@@ -76,7 +76,7 @@
   		$_SESSION["lastName"]  = $lname;
 
   		// redirect user to profile page
-  		die(header("location:profile.php?updateSucess=1"));
+  		die(header("location:profile.php?updateSuccess=1"));
   	}
   	else
    		printf("Query failed: %s", $conn->error);
