@@ -100,15 +100,15 @@ h4
 /* Smart phones */
 @media only screen and (max-width: 480px)
 {
-   .fa { font-size: 2.5em; }
-   .edit {	width: 50%;	}
+   .fa { font-size: 2.5em; } /* size of social media icons */
+   .edit {	width: 80%;	}	 /* location of edit pencil icon */
 }
 
 /* Tablets */
 @media only screen and (min-width: 481px) and (max-width: 1024px)
 {
    .fa { font-size: 3em; }
-   .edit {	width: 50%;	}
+   .edit {	width: 60%;	}
 }
 
 /* Laptops or desktops */
