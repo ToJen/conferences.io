@@ -71,12 +71,14 @@
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
 		<script type="text/javascript" src="jquery.imgareaselect-0.9.10/scripts/jquery.imgareaselect.min.js"></script>
 		<script type="text/javascript" src="js/email.js"></script>
 		<script type="text/javascript" src="js/datepicker.js"></script>
 		<script type="text/javascript" src="js/textarea-feedback.js"></script>
 		<script type="text/javascript" src="js/jquery.form.min.js"></script>
 		<script type="text/javascript" src="js/crop-save.js"></script>
+		<script type="text/javascript" src="js/edit-profile.js"></script>
 	</head>
 
 	<body>
